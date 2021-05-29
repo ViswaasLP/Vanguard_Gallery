@@ -1,88 +1,104 @@
 @font-face {
-  font-family: 'Oswald';
-  src: local('Oswald'), url(./assets/fonts/Oswald/Oswald-VariableFont_wght.ttf) format('truetype');
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url(./assets/fonts/Oswald/Oswald-VariableFont_wght.ttf) format("truetype");
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-.homeNav{
-  width:100vw;
-display: flex;
-flex-direction:horizontal;
-  align-items:center;
-  justify-content:center;
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.homeNav {
+  width: 100vw;
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
   position: fixed;
 }
 
-.nav{
+.nav {
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;
   display: flex;
-  flex-direction:horizontal;
-  align-items:center;
-  justify-content:center;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
 }
 
-.navMenu{
+.navMenu {
   float: right;
 }
 
-.logoArea{
+.logoArea {
   display: flex;
-  flex-direction:horizontal;
-  align-items:center;
-  justify-content:center;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
   position: static;
 }
 
-.logoLink{
+.logoLink {
   display: flex;
-  flex-direction:horizontal;
-  align-items:center;
-  justify-content:center;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
 }
 
-.brandLogo{
+.brandLogo {
   max-width: 100%;
-
-
 }
 
-.titlePage{
+.titlePage {
   display: inline-block;
   margin: top 10px;
   margin-left: 10px;
   font: size 25px;
-  height:35px;
-  font-family: 'Oswald';
+  height: 35px;
+  font-family: "Oswald";
   font-weight: 300;
-  
 }
 
-.navMenu{
+.navMenu {
   display: flex;
-  flex-direction:horizontal;
-  align-items:center;
-  justify-content:center;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   min-height: 100%;
   position: relative;
-  
 }
 
-.navButton{
+.navButton {
   padding: 27px 20px;
   font-size: 16px;
   border: 0px;
-  background-color: white;
+  background-color: transparent;
   transition: background-color 0.3s ease-in-out;
-  font-family: 'Oswald';
+  font-family: "Oswald";
+
 }
 
-.navButton:hover{
-  background-color:rgba(100, 180, 204, 0.75);
+.navButton:hover {
+  background-color: rgba(100, 180, 204, 0.75);
 }
 
+
+.videoTag{
+  z-index: -100;
+  width: 100%;
+  height: 100vh;
+  min-width: 0%;
+  max-width:100%;
+  max-height: 100vh;
+  overflow:hidden;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
