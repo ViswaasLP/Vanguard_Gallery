@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -20,6 +20,7 @@ body{
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 1;
 }
 
 .nav {
@@ -82,23 +83,145 @@ body{
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
   font-family: "Oswald";
-
 }
 
 .navButton:hover {
   background-color: rgba(100, 180, 204, 0.75);
 }
 
-
-.videoTag{
+.videoTag {
   z-index: -100;
   width: 100%;
   height: 100vh;
   min-width: 0%;
-  max-width:100%;
+  max-width: 100%;
   max-height: 100vh;
-  overflow:hidden;
+  overflow: hidden;
   object-fit: cover;
   position: absolute;
   top: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  min-width: 0%;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.homeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  padding: 0px 5%;
+  overflow: hidden;
+  position: static;
+}
+
+.logoContainer {
+  position: auto;
+  align-self: center;
+  justify-self: center;
+  display: block;
+  margin-right: 5%;
+  min-width: 50%;
+  max-width: none;
+  overflow: hidden;
+}
+
+.titleOne {
+  padding-bottom: 20px;
+  overflow: hidden;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  margin: 0;
+}
+
+.titleDescription {
+  padding: bottom 10px;
+  width: 400px;
+  min-width: 350px;
+  overflow: hidden;
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  line-height: 35px;
+}
+
+.mainsiteButton {
+  margin: 10px 5% 0px 0px;
+  padding: 9px 15px;
+  float: right;
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  line-height: 25px;
+  background-color: rgba(100, 180, 204, 0);
+  border: 3px solid white;
+  border-radius: 25px;
+  transition: opacity 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.mainsiteButton:hover {
+  background-color: rgba(100, 180, 204, 0.75);
+}
+
+.storiesContainer {
+  position: static;
+  align-self: none;
+  justify-self: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: stretch;
+  justify-items: stretch;
+  align-content: stretch;
+  justify-content: stretch;
+  margin: 10vh 0px 0px 5%;
+  min-width: 25%;
+  overflow: hidden;
+}
+
+.topStoriesTitle {
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+}
+
+.storiesTitle {
+  display: block;
+  padding-bottom: 1%;
+  margin-bottom: 19px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: white;
+  border-bottom: 1px solid white;
 }
