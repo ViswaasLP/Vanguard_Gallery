@@ -225,3 +225,133 @@ body {
   color: white;
   border-bottom: 1px solid white;
 }
+
+.topStoriesContainer {
+  align-self: none;
+  justify-self: none;
+  display: flex;
+  flex-direction: horizontal;
+  align-items: stretch;
+  justify-content: start;
+  padding: 20px;
+  width: auto;
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: outside 1px 0px 0px rgba(0, 0, 0, 0.12);
+  transition: opacity 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.topStoriesImageContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: auto;
+  min-width: auto;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.topStoriesImageFrame {
+  width: 100%;
+  height: 100%;
+  min-width: auto;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: outside 1px 0px 0px rgba(0, 0, 0, 0.12);
+}
+
+.topStoriesImage{
+  width: 200px;
+  height: 100px;
+  min-width: 40%;
+  min-height: 100%;
+  max-width: 200px;
+  max-height: 100px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.topStoriesArticleContainer{
+  display:flex;
+  flex-direction: column !important;
+  align-items: start;
+  justify-content: center;
+  padding: 0px 10px;
+  width: 100%;
+  height: 100%;
+  min-width: 63.08%;
+  min-height: auto;
+  min-height: none;
+}
+
+.topStoriesDiv{
+  display: flex;
+  flex-direction: column !important;
+  align-items: start;
+  justify-content: start;
+
+}
+
+.topStoriesArticleTitle{
+  display: block;
+  margin-bottom: 10px;
+  height: auto;
+  min-height: 27px;
+  max-height: 55px;
+  overflow: hidden;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+.topStoriesDescription{
+  margin-bottom: 5px;
+  height: 45px;
+  overflow: hidden;
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+}
+
+.topStoriesAuthorContainer{
+  display:flex;
+  flex-direction: horizontal;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.topStoriesCredit{
+  display:flex;
+  flex-direction: horizontal;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.topStoriesBy{
+  display: block;
+  margin: 10px 0px;
+  padding-right: 3px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+}
+
+.topStoriesAuthors{
+  display: block;
+  margin: 10px 0px;
+  padding-right: 3px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+}
