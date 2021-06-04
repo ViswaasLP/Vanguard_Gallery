@@ -14,13 +14,33 @@ body {
 }
 
 .homeNav {
-  width: 100vw;
-  display: flex;
-  flex-direction: horizontal;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
   z-index: 1;
+  position: fixed;
+     left: 0px;
+     top: 0px;
+     right: 0px;
+     display: block;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     justify-items: start;
+     -webkit-box-align: start;
+     -webkit-align-items: flex-start;
+     -ms-flex-align: start;
+     align-items: flex-start;
+     grid-auto-columns: 1fr;
+     -ms-grid-columns: 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
+     -ms-grid-rows: auto;
+     grid-template-rows: auto;
+     border-bottom: 0.1px solid rgba(0, 0, 0, 0.7);
+     background-color: #fff;
 }
 
 .nav {
@@ -38,19 +58,34 @@ body {
 }
 
 .logoArea {
-  display: flex;
-  flex-direction: horizontal;
-  align-items: center;
-  justify-content: center;
   position: static;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 5%;
+  float: left;
 }
 
-.logoLink {
+.logoLinkHome {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: horizontal;
-  align-items: center;
+  margin-top: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
 }
+
 
 .brandLogo {
   max-width: 100%;
@@ -58,31 +93,73 @@ body {
 
 .titlePage {
   display: inline-block;
-  margin: top 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   margin-left: 10px;
-  font: size 25px;
-  height: 35px;
-  font-family: "Oswald";
-  font-weight: 300;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  font-weight:300;
 }
 
-.navMenu {
+.navMenuContainer {
+       padding-right: 5%;
+
+}
+
+.navMenuHome {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: horizontal;
-  align-items: center;
-  justify-content: center;
   height: 100%;
   min-height: 100%;
-  position: relative;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: right;
 }
 
 .navButton {
+  display: block;
+  margin-top: 0px;
   padding: 27px 20px;
-  font-size: 16px;
-  border: 0px;
-  background-color: transparent;
-  transition: background-color 0.3s ease-in-out;
-  font-family: "Oswald";
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  font-family: Oswald, sans-serif;
+  color: #000;
+  border: 0;
 }
 
 .navButton:hover {
@@ -134,7 +211,7 @@ body {
 .logoContainer {
   position: auto;
   align-self: center;
-  justify-self: center;
+  justify-self: start;
   display: block;
   margin-right: 5%;
   min-width: 50%;
@@ -201,6 +278,7 @@ body {
   margin: 10vh 0px 0px 5%;
   min-width: 25%;
   overflow: hidden;
+  row-gap: 16px;
 }
 
 .topStoriesTitle {
@@ -250,7 +328,6 @@ body {
   width: auto;
   min-width: auto;
   min-height: auto;
-  overflow: hidden;
 }
 
 .topStoriesImageFrame {
@@ -263,19 +340,18 @@ body {
   box-shadow: outside 1px 0px 0px rgba(0, 0, 0, 0.12);
 }
 
-.topStoriesImage{
-  width: 200px;
-  height: 100px;
+.topStoriesImage {
+  width: 164px;
+  height: 87px;
   min-width: 40%;
   min-height: 100%;
   max-width: 200px;
   max-height: 100px;
-  overflow: hidden;
   object-fit: cover;
 }
 
-.topStoriesArticleContainer{
-  display:flex;
+.topStoriesArticleContainer {
+  display: flex;
   flex-direction: column !important;
   align-items: start;
   justify-content: center;
@@ -287,56 +363,57 @@ body {
   min-height: none;
 }
 
-.topStoriesDiv{
+.topStoriesDiv {
   display: flex;
   flex-direction: column !important;
   align-items: start;
   justify-content: start;
-
 }
 
-.topStoriesArticleTitle{
+.topStoriesArticleTitle {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   height: auto;
   min-height: 27px;
   max-height: 55px;
   overflow: hidden;
   font-family: "Oswald";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 27px;
   color: white;
 }
 
-.topStoriesDescription{
-  margin-bottom: 5px;
+.topStoriesDescription {
+  margin-bottom: 0px;
   height: 45px;
   overflow: hidden;
   font-family: "Oswald";
-  font-weight: 300;
+  font-weight: 200;
   font-size: 16px;
   line-height: 22px;
   color: white;
 }
 
-.topStoriesAuthorContainer{
-  display:flex;
+.topStoriesAuthorContainer {
+  display: flex;
   flex-direction: horizontal;
   align-items: stretch;
   justify-content: start;
 }
 
-.topStoriesCredit{
-  display:flex;
+.topStoriesCredit {
+  display: flex;
   flex-direction: horizontal;
   align-items: stretch;
   justify-content: start;
 }
 
-.topStoriesBy{
+.topStoriesBy {
   display: block;
-  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   padding-right: 3px;
   font-family: "Oswald";
   font-weight: 400;
@@ -345,13 +422,467 @@ body {
   color: white;
 }
 
-.topStoriesAuthors{
+.topStoriesAuthors {
   display: block;
-  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   padding-right: 3px;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: white;
+}
+
+.recognition {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-color: rgba(194, 194, 194, 0.42);
+}
+
+.headlineDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.decoLineLeft {
+  margin-right: 10px;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+
+.decoLineRight {
+  margin-left: 10px;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+
+.colTitle {
+  padding: 20px 0px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+.colDiv {
+  display: flex;
+  padding: 20px 0% 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.colLogo {
+  margin-right: 5%;
+  width: 185px;
+  height: 30px;
+  background-image: url(../src/assets/images/UCLAlogo.svg);
+}
+
+.colText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 5%;
+  border-left: 1px solid black;
+}
+
+.colDiv1 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.colPara {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: "Oswald";
+  color: #535353;
+  margin-top: 0px;
+}
+.colLink {
+  padding: 0px 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  height: 22px;
+  font-family: "Oswald";
+  color: #417686;
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.teamMembers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  margin: 0 5% 5%;
+  max-width: 1200px;
+
+}
+
+.teamMember{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 400px;
+  max-width: none;
+  max-height: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius:10px;
+  box-shadow: 1px 1px 5px -2px #000;
+  transition: background-color 200ms ease-in-out;
+}
+
+.teamMemberImage{
+  width:100px;
+  height:100px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.teamMemberName{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0;
+}
+.teamMemberDescription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+
+.mainfooter.footer {
+  position: static;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  overflow: visible;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: #2b2c2e;
+  color: #e4e8eb;
+}
+
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.w-row:before,
+.w-row:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+.w-row:after {
+  clear: both;
+}
+.w-row .w-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.w-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.w-col .w-col {
+  padding-left: 0;
+  padding-right: 0;
+}.w-col-1 {
+  width: 8.33333333%;
+}
+.w-col-2 {
+  width: 16.66666667%;
+}
+.w-col-3 {
+  width: 25%;
+}
+.w-col-4 {
+  width: 33.33333333%;
+}
+.w-col-5 {
+  width: 41.66666667%;
+}
+.w-col-6 {
+  width: 50%;
+}
+.w-col-7 {
+  width: 58.33333333%;
+}
+.w-col-8 {
+  width: 66.66666667%;
+}
+.w-col-9 {
+  width: 75%;
+}
+.w-col-10 {
+  width: 83.33333333%;
+}
+.w-col-11 {
+  width: 91.66666667%;
+}
+.w-col-12 {
+  width: 100%;
+}
+.w-hidden-main {
+  display: none !important;
+}
+
+.logo-text {
+  margin-top: 24px;
+  font-family: "Roboto Slab";
+  color: #1c1c1c;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.logo-text.footer {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 19px;
+  font-family: Oswald, sans-serif;
+  color: #e6eaed;
+}
+
+
+.footer-slogan {
+  display: block;
+  margin-right: 0px;
+  margin-bottom: 11px;
+  padding-right: 0px;
+  font-family: Oswald, sans-serif;
+  color: #939596;
+}
+.newsletter-form {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.w-clearfix:before,
+.w-clearfix:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+.w-clearfix:after {
+  clear: both;
+}.newsletter-field {
+  width: 60%;
+  height: 40px;
+  float: left;
+  border: 1px solid transparent;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: #e8e8e8;
+  font-family: Oswald, sans-serif;
+}
+
+.newsletter-field:focus {
+  border-width: 1px;
+  border-color: #09f;
+  box-shadow: 0 0 6px 0 #489fd9;
+}.newsletter-button {
+  width: 40%;
+  height: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  float: left;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #5f6166;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: Oswald, sans-serif;
+  color: #d5d8db;
+  font-size: 13px;
+}
+
+.newsletter-button:hover {
+  background-color: #489fd9;
+  color: #fff;
+}
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898ec;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+input.w-button {
+  -webkit-appearance: button;
+}.success-message {
+  background-color: #5f6166;
+}
+.w-form-done {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #dddddd;
+}
+
+.w-form-fail {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffdede;
+}
+.social-icon-group {
+  display: inline-block;
+}
+
+.link-block-2 {
+  margin-right: 10px;
+  padding-right: 0px;
+}
+
+.link-block-2:hover {
+  color: rgba(228, 232, 235, 0.65);
+}
+.link-block-4 {
+  margin-right: 10px;
+}
+
+.link-block-4:hover {
+  color: rgba(228, 232, 235, 0.65);
+}
+
+.link-block-5 {
+  margin-right: 10px;
+}
+
+.link-block-5:hover {
+  color: rgba(228, 232, 235, 0.65);
+}
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.footertitle {
+  margin-top: 0px;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footerlink {
+  border-bottom: 1px solid transparent;
+  -webkit-transition: color 300ms ease, border 300ms ease;
+  transition: color 300ms ease, border 300ms ease;
+  color: #489fd9;
+  text-decoration: none;
+}
+
+.footerlink:hover {
+  border-bottom-color: #489fd9;
+}
+
+.footerlink.in-footer {
+  display: block;
+  font-family: Oswald, sans-serif;
+  color: #939596;
+}
+
+.footerlink.in-footer:hover {
+  border-bottom-color: transparent;
+  color: #d2d7d9;
+}.footerlink.in-footer {
+  display: block;
+  font-family: Oswald, sans-serif;
+  color: #939596;
+}
+
+.footerlink.in-footer:hover {
+  border-bottom-color: transparent;
+  color: #d2d7d9;
+}.subfootertext {
+  display: inline-block;
+  padding-left: 0%;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+.subfooterlink {
+  font-family: Oswald, sans-serif;
+  color: #00a1ff;
+  padding-left: 5px;
+}
+
+.subfootercontainer {
+  text-align: center;
+}
+
+.subfooter.footer.copyright {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background-color: #1c1d1f;
+  color: #939596;
+  font-size: 14px;
 }
